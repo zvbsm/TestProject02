@@ -1,0 +1,25 @@
+{
+  "name": "TestProject02",
+  "version": "0.0.0",
+  "homepage": "https://github.com/zvbsm/TestProject02",
+  "authors": [
+    "Fernando Delgado"
+  ],
+  "description": "Developing a single page app that works like a blog system. This app uses AngularJS as the framework. This app will take user input and generate a post with a time stamp. When a user clicks on the post, it will expand with additional info or actions. The main focus of this project is the UI.",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "bootstrap": "~3.3.5"
+  }
+}
