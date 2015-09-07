@@ -1,0 +1,23 @@
+{
+  "name": "testproject02",
+  "version": "1.0.0",
+  "description": "An exercise to develop a simple blogging app that will take user input and generate a post with a timestamp",
+  "main": "nodeServer.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvbsm/TestProject02.git"
+  },
+  "author": "Fernando Delgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zvbsm/TestProject02/issues"
+  },
+  "homepage": "https://github.com/zvbsm/TestProject02#readme"
+}

@@ -7,8 +7,10 @@
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="js/blogApp.js"></script>
+    <script src="js/blogControllers.js"></script>
+    <script src="js/blogServices.js"></script>
   </head>
-  <body>
+  <body ng-controller="postsController">
   	<nav class="navbar navbar-inverse">
       <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -42,9 +44,10 @@
           </ul>
           <form class="navbar-form navbar-right pull-right" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="text" class="form-control" placeholder="Username">
+              <input type="password" class="form-control" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-success">Login</button>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -53,28 +56,32 @@
       <div class="row">
         <div class="col-md-8">
    	      <div class="container-fluid">
-            <div class="panel panel-default"><!--angular repeat panel for each post here-->
+            <div class="panel panel-success" ng-repeat="post in posts">
               <div class="panel-heading">
-                <h3 class="panel-title">Title of This Blog Post</h3>
+                <h3 class="panel-title">{{post.title}}</h3>
               </div>
               <div class="panel-body">
-                Post content
+                {{post.content}}
               </div>
-              <div class="panel-footer">Posted By: John Smith | Date: Aug 31, 2015</div>
-            </div><!--end angular's repeat-->
+              <div class="panel-footer clearfix">Posted By: <b>{{post.author}}</b> | {{post.date | date}}
+                <span class="pull-right">Highlight this Post 
+                  <button ng-click="highlightPost(post)" class="btn btn-warning glyphicon glyphicon-star btn-xs"></button>
+                </span>
+              </div>
+            </div><!--end angular's repeat blog posts-->
   	      </div><!--End container-fluid-->
         </div><!--End column md 8-->
         <div class="col-md-3 pull-right">
       	  <div class="container-fluid">
             <div class="panel panel-success zeroMargin">
               <div class="panel-heading">
-                <h3 class="panel-title">Recent Posts</h3>
+                <h3 class="panel-title">Highlighted Posts</h3>
               </div>
               <div class="panel-body zeroPad">
-              	<div class="list-group zeroMargin"><!--angular repeat last 5 blog posts-->
+              	<div class="list-group zeroMargin" ng-repeat="hPost in highlightedPosts"><!--angular repeat highlighted posts-->
                   <a href="#" class="list-group-item">
-                    <h4 class="list-group-item-heading">Post Title</h4>
-                    <p class="list-group-item-text">First words in content...</p>
+                    <h4 class="list-group-item-heading">{{hPost.title}}</h4>
+                    <p class="list-group-item-text">{{hPost.content | limitTo:12}}...</p>
                   </a>
                 </div><!--end angular repeat last 5 blog posts-->
               </div>

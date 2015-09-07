@@ -1,0 +1,14 @@
+[
+  {
+  	"author" : "John Doe",
+	"title" : "First Post",
+	"date" : 1341584505870,
+	"content" : "Example of a blog post for displaying on the page."
+  },
+  {
+  	"author" : "Al Gore",
+	"title" : "Second Post",
+	"date" : 1441584705874,
+	"content" : "Another blog post."
+  }
+]
