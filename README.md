@@ -1,5 +1,5 @@
 # TestProject02 <br>
-Single page app blogging system. The key feature of this app is to take user input and generate a post with a time stamp. When a post is clicked, it generates a view.<br>
+Single page app for generating posts. The key feature of this app is to take user input and generate a post with a time stamp. When a post is clicked, it generates a view.<br>
 
 Currently, this page has a navigation menu at the top, the posts displayed in the body below, and a section on the right side that lists highlighted posts. I may change that part later depending how other parts develop. Each post has a button that can be clicked to highlight that post, which it then is displayed in the section on the right. So far, I plan to impliment angular route to handle the navigation on the app, then add the page that would hold the form for creating a new post.<br>
 
