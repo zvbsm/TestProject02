@@ -21,8 +21,8 @@ Will contain any custom css outside of bootstrap
 /TestProject02/app/js/ <br>
 Contains the angular code for the app including the controllers and services.
 
-/TestProject02/bower_components
+/TestProject02/bower_components <br>
 Scripts for AngularJS, Bootstrap, and angular-route where installed with bower and are stored in bower_components<br>
 
-/TestProject02/node_modules
+/TestProject02/node_modules <br>
 node_modules contains express which is associated with nodeJS for running the local server
