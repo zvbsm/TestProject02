@@ -1,3 +1,7 @@
+body {padding-bottom: 70px;}
+
 .zeroPad {padding: 0;}
 
 .zeroMargin {margin: 0;}
+
+.addPadBtm {padding-bottom: 15px;}
