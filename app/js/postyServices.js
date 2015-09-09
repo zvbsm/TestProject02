@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('blogApp')
+angular.module('postyApp')
 .factory('postsFactory', function($http) {
   return $http.get('json/posts.json');
 });

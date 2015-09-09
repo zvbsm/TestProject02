@@ -5,3 +5,17 @@ body {padding-bottom: 70px;}
 .zeroMargin {margin: 0;}
 
 .addPadBtm {padding-bottom: 15px;}
+
+.centerRow {
+	text-align: center;
+}
+
+.centerCol {
+	display: inline-block;
+	text-align: left;
+	float: none;
+}
+
+[ng-click] {
+	cursor: pointer;
+}

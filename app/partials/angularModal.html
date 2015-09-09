@@ -1,0 +1,20 @@
+
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close('Cancel')" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">{{thisPost.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{thisPost.content}}</p>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix">
+          <span class="pull-left">Posted By: <b>{{thisPost.author}}</b> | {{thisPost.date | date}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
